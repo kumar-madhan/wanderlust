@@ -1,23 +1,32 @@
-# Use a stable Node.js LTS version for reliability
-FROM node:20
+# ------------------- Stage 1: Build Stage ------------------------------
+FROM node:21 AS frontend-builder
 
-# Set the working directory inside the container
+# Set the working directory to /app
 WORKDIR /app
 
-# Copy package metadata first for build caching
+# Copy the package.json and package-lock.json for dependency installation
 COPY package*.json ./
 
-# Install dependencies (use 'npm ci' for CI/CD or locked installs)
+# Install dependencies
 RUN npm install
 
-# Copy the full application source
+# Copy the rest of the application code
 COPY . .
 
-# Set environment variable for development
-ENV NODE_ENV=development
+# ------------------- Stage 2: Final Stage ------------------------------
+FROM node:21-slim
 
-# Expose application port (5123)
-EXPOSE 5123
+# Set the working directory to /app
+WORKDIR /app
 
-# Run the development server
-CMD ["npm", "run", "dev"]
+# Copy built assets and dependencies from frontend-builder stage
+COPY --from=frontend-builder /app .
+
+# Copy the .env.sample file to .env.local
+# COPY .env.docker .env.local
+
+# Expose port 5173 for the Node.js application
+EXPOSE 5173
+
+# Define the default command to run the application in development mode
+CMD ["npm", "run", "dev", "--", "--host"]
