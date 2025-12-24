@@ -1,15 +1,15 @@
-import { retrieveDataFromCache } from './cache-posts.js';
-import { HTTP_STATUS } from './constants.js';
-
 export const cacheHandler = (key) => async (req, res, next) => {
+  if (process.env.NODE_ENV !== 'production') {
+    return next(); // disable cache in dev
+  }
+
   try {
     const cachedData = await retrieveDataFromCache(key);
     if (cachedData) {
-      console.log(`Getting cached data for key: ${key}`);
-      return res.status(HTTP_STATUS.OK).json(cachedData);
+      return res.json(cachedData);
     }
-    next(); // Proceed to the route handler if data is not cached
+    next();
   } catch (err) {
-    res.status(HTTP_STATUS.INTERNAL_SERVER_ERROR).json({ message: err.message });
+    next();
   }
 };
