@@ -44,14 +44,17 @@ join_categories() {
   for item in "${arr[@]}"; do
     out+="\"${item}\"," 
   done
-  # remove trailing comma and space
-  printf "%s" "${out%, }"
+  # remove trailing comma
+  printf "%s" "${out%,}"
 }
 
 for i in $(seq 0 $((NUM-1))); do
-  author="${authors[i % ${#authors[@]}]}"
-  title="${titles[i % ${#titles[@]}]}"
-  keyword="${keywords[i % ${#keywords[@]}]}"
+  idx_author=$(( i % ${#authors[@]} ))
+  author="${authors[$idx_author]}"
+  idx_title=$(( i % ${#titles[@]} ))
+  title="${titles[$idx_title]}"
+  idx_keyword=$(( i % ${#keywords[@]} ))
+  keyword="${keywords[$idx_keyword]}"
   image="https://source.unsplash.com/800x450/?${keyword// /%20}"
 
   # pick 1-3 random categories
@@ -67,9 +70,14 @@ for i in $(seq 0 $((NUM-1))); do
 
   categories_json=$(join_categories "${picked[@]}")
 
-  description="${descriptions[i % ${#descriptions[@]}]}"
+  idx_desc=$(( i % ${#descriptions[@]} ))
+  description="${descriptions[$idx_desc]}"
   # featured every 4th post
-  isFeatured=$(( (i % 4) == 0 && echo true || echo false ))
+  if (( i % 4 == 0 )); then
+    isFeatured=true
+  else
+    isFeatured=false
+  fi
   # spread timestamps over the past year
   days_ago=$((RANDOM % 365))
   timeOfPost=$(date -u -d "-${days_ago} days" +%Y-%m-%dT%H:%M:%SZ)
