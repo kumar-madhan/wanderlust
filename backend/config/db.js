@@ -1,7 +1,8 @@
 import mongoose from 'mongoose';
-import { MONGODB_URI } from './utils.js';
+const MONGODB_URI = 'mongodb://127.0.0.1:27017/wanderlust';
 export default function connectDB() {
   try {
+    console.log('Connecting to MongoDB with URI:', MONGODB_URI);
     mongoose.connect(MONGODB_URI);
   } catch (err) {
     console.error(err.message);

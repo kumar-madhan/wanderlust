@@ -6,6 +6,11 @@ COPY package*.json ./
 RUN npm ci
 
 COPY . .
+
+# Pass VITE_API_PATH as an argument and environment variable
+ARG VITE_API_PATH=http://localhost:5000
+ENV VITE_API_PATH=$VITE_API_PATH
+
 RUN npm run build
 
 # -------- runtime stage --------

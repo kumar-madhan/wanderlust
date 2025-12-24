@@ -9,6 +9,11 @@ import { PORT } from './config/utils.js';
 import authRouter from './routes/auth.js';
 import postsRouter from './routes/posts.js';
 
+import dotenv from 'dotenv';
+dotenv.config({ path: './.env' });
+
+process.env.MONGODB_URI = 'mongodb://127.0.0.1:27017/wanderlust';
+
 const app = express();
 const port = PORT || 5000;
 
@@ -30,5 +35,8 @@ app.get('/', (_, res) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+console.log('MONGODB_URI:', process.env.MONGODB_URI);
+console.log('dotenv loaded:', dotenv.config());
 
 export default app;

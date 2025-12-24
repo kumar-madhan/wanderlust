@@ -6,7 +6,7 @@ set -euo pipefail
 # - includes ISO timestamps in `timeOfPost`
 
 NUM=12
-authors=("Alex Rivera" "Maya Chen" "Liam O'Connor" "Sofia Martinez" "Noah Patel" "Emma Johansson" "Daniel Kim" "Olivia Brown" "Ethan Wright" "Ava Thompson" "Lucas Silva" "Mia Rossi")
+authors=("Alex Rivera" "Maya Chen" "Liam O'Connor" "Sofia Martinez" "Noah Patel" "Emma Johansson" "Daniel Kim" "Olivia Brown" "Ethan Wright" "Ava Thompson" "Lucas Silva" "Mia Rossi" "Isabella Green" "Eleanor Carter" "Benjamin Lee" "Sophia Turner" "James Anderson")
 titles=(
   "Sunrise over the Serengeti"
   "Lost in Lisbon's Alleys"
@@ -20,9 +20,14 @@ titles=(
   "Roadtrip Across Patagonia"
   "Morning Markets of Marrakech"
   "Northern Lights in Tromsø"
+  "Exploring the Fjords of Norway"
+  "A Culinary Journey Through Italy"
+  "The Hidden Gems of Prague"
+  "Safari Adventures in Kenya"
+  "The Magic of the Northern Lights"
 )
-keywords=("serengeti" "lisbon" "dolomites" "bangkok" "halong bay" "kyoto" "wadi" "barcelona" "whitsundays" "patagonia" "marrakech" "tromso")
-categories_pool=("Travel" "Adventure" "Food" "Culture" "Nature" "Photography" "Roadtrip" "Beaches" "Hiking")
+keywords=("serengeti" "lisbon" "dolomites" "bangkok" "halong bay" "kyoto" "wadi" "barcelona" "whitsundays" "patagonia" "marrakech" "tromso" "norway" "italy" "prague" "kenya" "northern lights")
+categories_pool=("Travel" "Adventure" "Food" "Culture" "Nature" "Photography" "Roadtrip" "Beaches" "Hiking" "Culinary" "History" "Wildlife")
 descriptions=(
   "A breathtaking sunrise that painted the grasslands gold, and a day filled with roaming wildlife and wide-open skies."
   "Wandering narrow cobbled streets, discovering hidden miradouros and tasting pastéis at a tiny bakery."
@@ -36,6 +41,11 @@ descriptions=(
   "Endless horizons, glacial lakes and winding gravel roads through dramatic landscapes."
   "Spices, colourful textiles and the hum of bargaining at sunrise markets — sensory overload in the best way."
   "Dancing curtains of green across the sky; cold nights rewarded by awe and silence."
+  "Discover the breathtaking beauty of Norway's fjords, where towering cliffs meet serene waters."
+  "Indulge in Italy's rich culinary heritage, from pasta to gelato, in this flavorful journey."
+  "Uncover the lesser-known treasures of Prague, a city steeped in history and charm."
+  "Experience the thrill of a Kenyan safari, where the Big Five roam free."
+  "Witness the awe-inspiring Northern Lights, a natural phenomenon that lights up the Arctic skies."
 )
 
 join_categories() {

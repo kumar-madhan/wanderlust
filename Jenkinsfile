@@ -33,8 +33,8 @@ pipeline {
       steps {
         sh '''
           sleep 10
-          curl -f http://localhost:8080
-          curl -f http://localhost:8080/api/posts
+          curl -f http://localhost:80
+          curl -f http://localhost:5000/api/posts
         '''
       }
     }
