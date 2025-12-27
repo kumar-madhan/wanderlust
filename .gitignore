@@ -1,40 +1,70 @@
-# Node
-node_modules/
-npm-debug.log
-.yarn/
-.pnpm/
-
-# Frontend build
-frontend/dist/
-frontend/node_modules/.vite/
-
-# Env files
+# ===============================
+# Global
+# ===============================
 .env
-*.env
-
-# Logs
-logs/
+.env.*
 *.log
+logs/
 nohup.out
-
-# Jenkins
-jenkins/workspace/
-jenkins/caches/
-jenkins/*.log
-jenkins/*.pid
-
-# OS / Editor
 .DS_Store
 Thumbs.db
+
+# ===============================
+# Node / JavaScript
+# ===============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===============================
+# Backend (Node + Mongo + Redis)
+# ===============================
+backend/.env
+backend/.env.*
+backend/coverage/
+backend/dist/
+backend/tmp/
+
+# ===============================
+# Frontend (Vite / React)
+# ===============================
+frontend/.env
+frontend/.env.*
+frontend/dist/
+frontend/build/
+frontend/coverage/
+
+# ===============================
+# Testing
+# ===============================
+coverage/
+.nyc_output/
+
+# ===============================
+# Docker
+# ===============================
+**/docker-compose.override.yml
+
+# ===============================
+# Jenkins / CI
+# ===============================
+*.pid
+*.seed
+*.pid.lock
+
+# ===============================
+# IDEs & Editors
+# ===============================
 .vscode/
 .idea/
+*.iml
 *.swp
-*.bak
+*.swo
 
-# Local tools
-tools/
-nodejs/
-java/
-tomcat/
-httpd/
-maven/
+# ===============================
+# OS / Misc
+# ===============================
+.cache/
+.tmp/

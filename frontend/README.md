@@ -1,27 +1,78 @@
-# React + TypeScript + Vite
+# 🎨 WanderLust Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **client-side application** for WanderLust built with **React**, **TypeScript**, and **Vite**.  
+Designed for performance, accessibility, and clean UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- ⚛️ React + TypeScript
+- 🎨 Tailwind CSS styling
+- 🌗 Dark / Light mode
+- 🧪 Component & integration tests
+- ⚡ Fast builds with Vite
+- 🐳 Docker-ready
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🧩 Tech Stack
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Jest
+- ESLint & Prettier
+
+---
+
+## 🗂️ Folder Structure
+
+```
+frontend/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── utils/
+│   └── App.tsx
+├── public/
+├── index.html
+└── Dockerfile
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---
+
+## 🚀 Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Runs at: `http://localhost:5173`
+
+---
+
+## 🔐 Environment Variables
+
+Create `.env`:
+
+```env
+VITE_API_BASE_URL=http://localhost:5000/api
+```
+
+---
+
+## 🧪 Testing
+
+```bash
+npm test
+```
+
+---
+
+## 📜 License
+
+MIT License
