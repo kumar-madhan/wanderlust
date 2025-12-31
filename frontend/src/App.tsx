@@ -1,18 +1,17 @@
-import { useEffect, useState } from 'react';
-import { getAllPosts } from './api/posts';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import BlogFeed from './components/blog-feed';
+import PostDetails from './pages/post-details';
+import './App.css';
 
 function App() {
-  const [posts, setPosts] = useState([]);
-  useEffect(() => { getAllPosts().then(setPosts); }, []);
   return (
-    <div>
-      <h1>🌍 Wanderlust Blog</h1>
-      <ul>
-        {posts.map((p:any) => (
-          <li key={p.id}>{p.title} — {p.authorName}</li>
-        ))}
-      </ul>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<BlogFeed />} />
+        <Route path="/posts/:id" element={<PostDetails />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
 export default App;
