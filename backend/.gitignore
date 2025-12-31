@@ -1,0 +1,50 @@
+# ---- Build Outputs ----
+/target/
+/build/
+/out/
+
+# ---- Logs ----
+*.log
+logs/
+spring.log
+
+# ---- OS Files ----
+.DS_Store
+Thumbs.db
+
+# ---- IDEs ----
+.vscode/
+.idea/
+*.iml
+*.class
+
+# ---- Environment & Config ----
+.env
+*.properties.local
+application-local.properties
+application-dev.properties
+application-prod.properties
+
+# ---- Dependency Caches ----
+/node_modules/
+/.mvn/
+/mvnw
+/mvnw.cmd
+/.gradle/
+/.gradle/
+
+# ---- Coverage ----
+/coverage/
+/jacoco.exec
+
+# ---- Temporary & Misc ----
+*.tmp
+*.bak
+*.swp
+*.swo
+*.orig
+
+# ---- Docker ----
+/docker-compose.override.yml
+/.docker/
+/*.pid

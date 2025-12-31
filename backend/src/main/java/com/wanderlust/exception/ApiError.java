@@ -1,2 +1,2 @@
 package com.wanderlust.exception;
-public record ApiError(String message) {}
+public record ApiError(String message) { }

@@ -1,0 +1,114 @@
+[
+  {
+    "authorName": "Emma Wilson",
+    "title": "Exploring the Alps: A Journey Through Snow and Sky",
+    "description": "The Alps are more than mountains — they are a symphony of white peaks, frozen lakes, and cozy villages that invite you to explore.",
+    "imageLink": "https://images.unsplash.com/photo-1526481280691-3e4e9c1d4a1d",
+    "categories": ["Adventure", "Europe", "Mountains"],
+    "isFeaturedPost": true
+  },
+  {
+    "authorName": "Carlos Rivera",
+    "title": "Street Food Diaries: Bangkok After Midnight",
+    "description": "The sizzling woks and the aroma of lemongrass tell a story of Thai culture that comes alive under the moonlight.",
+    "imageLink": "https://images.unsplash.com/photo-1532634896-26909d0d4b28",
+    "categories": ["Food", "Asia", "Culture"],
+    "isFeaturedPost": true
+  },
+  {
+    "authorName": "Sophia Martins",
+    "title": "Digital Nomads’ Guide to Lisbon",
+    "description": "From pastel de nata to coworking cafes, Lisbon has become the heart of Europe’s digital nomad revolution.",
+    "imageLink": "https://images.unsplash.com/photo-1518684079-3c830dcef090",
+    "categories": ["Work", "Europe", "Lifestyle"],
+    "isFeaturedPost": false
+  },
+  {
+    "authorName": "Omar Khalid",
+    "title": "Desert Stars: Camping in Wadi Rum",
+    "description": "Spend a night in Jordan’s red desert under a sky filled with stars, where silence speaks louder than words.",
+    "imageLink": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
+    "categories": ["Adventure", "Middle East", "Nature"],
+    "isFeaturedPost": false
+  },
+  {
+    "authorName": "John Doe",
+    "title": "A Journey Through the Marvelous Beaches of Maldives and a marvelous experience",
+    "imageLink": "https://i.ibb.co/3z72vmc/clean-lake-mountains-range-trees-nature-4k.webp",
+    "categories": ["Travel", "Beaches"],
+    "description": "The Maldives is a tropical paradise known for its stunning beaches, crystal-clear waters, and vibrant marine life. In this journey, we explore the breathtaking beauty of the Maldives' beaches. From the white sands to the vibrant coral reefs, there's something for every traveler.",
+    "isFeaturedPost": true
+  },
+  {
+    "authorName": "Alice Smith",
+    "title": "Capturing the Cityscape at Night: A Mesmerizing Experience",
+    "imageLink": "https://i.ibb.co/y8vQnDc/c4fedab1-4041-4db5-9245-97439472cf2c.webp",
+    "categories": ["Travel", "City", "Night"],
+    "description": "Discover the magic of cityscapes at night in this captivating journey. The city lights, towering skyscrapers, and bustling streets create a unique atmosphere that is truly mesmerizing.",
+    "isFeaturedPost": true
+  },
+  {
+    "authorName": "Jane Wilson",
+    "title": "Embracing Adventure: Exploring the Great Outdoors",
+    "imageLink": "https://i.ibb.co/d0g42nr/FPO-BOR-100-800x600.webp",
+    "categories": ["Travel", "Adventure", "Nature"],
+    "description": "Get ready to experience the thrill of outdoor adventures in some of the world's most beautiful natural settings. From hiking and camping to white-water rafting, this journey takes you to the heart of nature and offers an adrenaline rush like no other.",
+    "isFeaturedPost": true
+  },
+  {
+    "authorName": "David Brown",
+    "title": "London Skyline: An Iconic View of the British Capital",
+    "imageLink": "https://i.ibb.co/BNjv5Nn/London-Skyline-125508655.webp",
+    "categories": ["Travel", "City", "Landmarks"],
+    "description": "Marvel at the iconic London skyline, featuring historic landmarks like Big Ben, the London Eye, and the Shard. Join us on a journey to explore the rich history and modernity of the British capital through its stunning skyline.",
+    "isFeaturedPost": true
+  },
+  {
+    "authorName": "Ella Davis",
+    "title": "Serenity in Nature: Finding Peace Amidst Scenic Beauty",
+    "imageLink": "https://i.ibb.co/d0g42nr/FPO-BOR-100-800x600.webp",
+    "categories": ["Nature", "Scenic", "Tranquil"],
+    "description": "Find solace and serenity in the heart of nature's most scenic landscapes. This journey takes you to tranquil forests, serene lakes, and picturesque countryside. Immerse yourself in the beauty of the natural world and experience true peace.",
+    "isFeaturedPost": true
+  },
+  {
+    "authorName": "Robert Johnson",
+    "title": "Chasing Sunsets: The Beauty of Evening by the Beach",
+    "imageLink": "https://i.ibb.co/52mk2Yq/sunset-pier.webp",
+    "categories": ["Travel", "Beaches", "Sunset"],
+    "description": "Witness the breathtaking beauty of sunsets by the beach. As the sun dips below the horizon, it paints the sky with hues of orange, pink, and gold. This journey captures the magical moments of evening by the sea.",
+    "isFeaturedPost": false
+  },
+  {
+    "authorName": "Sophia White",
+    "title": "City Lights: A Spectacle After Dark",
+    "imageLink": "https://i.ibb.co/KLwfZzG/Maldives-1024x767.webp",
+    "categories": ["Travel", "City", "Night"],
+    "description": "Experience the vibrant energy of cities after dark. The city lights, bustling streets, and lively nightlife create a spectacle that must be seen to be believed. Join us for a journey through the electrifying nightscapes of urban hubs.",
+    "isFeaturedPost": false
+  },
+  {
+    "authorName": "Michael Clark",
+    "title": "Mountain Adventures: Scaling New Heights",
+    "imageLink": "https://i.ibb.co/qxFMj1H/sunset-horizon-clean-sky-nature.webp",
+    "categories": ["Travel", "Adventure", "Mountains"],
+    "description": "Embark on thrilling mountain adventures in some of the world's most spectacular mountain ranges. From trekking through alpine meadows to conquering challenging peaks, this journey takes you to new heights in the world of adventure.",
+    "isFeaturedPost": false
+  },
+  {
+    "authorName": "Olivia Taylor",
+    "title": "Historical Sites: Exploring Ancient Landmarks",
+    "imageLink": "https://i.ibb.co/d0g42nr/FPO-BOR-100-800x600.webp",
+    "categories": ["Travel", "History", "Landmarks"],
+    "description": "Embark on a journey to explore historical sites and ancient landmarks that tell the stories of civilizations past. Uncover the secrets of the past as you visit historic sites and delve into the mysteries of history.",
+    "isFeaturedPost": false
+  },
+  {
+    "authorName": "William Harris",
+    "title": "Forest Retreat: Discovering Peace in Nature's Embrace",
+    "imageLink": "https://i.ibb.co/KLwfZzG/Maldives-1024x767.webp",
+    "categories": ["Nature", "Forests", "Retreat"],
+    "description": "Find solace in the tranquility of the forest. This retreat into nature's embrace allows you to disconnect from the bustling world and discover the peaceful beauty of dense forests, serene lakes, and gentle streams.",
+    "isFeaturedPost": false
+  }
+]
