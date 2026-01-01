@@ -2,10 +2,10 @@ package com.wanderlust.service;
 
 import com.wanderlust.model.Post;
 import com.wanderlust.repository.PostRepository;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class PostService {
@@ -16,38 +16,49 @@ public class PostService {
         this.postRepo = postRepo;
     }
 
-    // ✅ Return all posts
+    /* =====================
+       READ OPERATIONS
+       ===================== */
+
+    // Existing behavior preserved (first page)
     public List<Post> getAllPosts() {
-        return postRepo.findAll();
+        return postRepo
+            .findAll(PageRequest.of(0, 5))
+            .getContent();
     }
 
-    // ✅ Return featured posts
     public List<Post> getFeaturedPosts() {
-        return postRepo.findByFeaturedPostTrue();
+        return postRepo
+            .findByFeaturedPostTrue(PageRequest.of(0, 5))
+            .getContent();
     }
 
-    // ✅ Create new post
+    public List<Post> getPostsByAuthor(String authorName) {
+        return postRepo.findByAuthorNameIgnoreCase(authorName);
+    }
+
+    public List<Post> getPostsByCategory(String category) {
+        return postRepo
+            .findByCategoriesContainingIgnoreCase(
+                category,
+                PageRequest.of(0, 5)
+            )
+            .getContent();
+    }
+
+    public Post getPostById(String id) {
+        return postRepo.findById(id).orElse(null);
+    }
+
+    /* =====================
+       WRITE OPERATIONS
+       ===================== */
+
     public Post createPost(Post post) {
         return postRepo.save(post);
     }
 
-    // ✅ Get single post by ID
-    public Optional<Post> getPostById(String id) {
-        return postRepo.findById(id);
-    }
-
-    // ✅ Delete a post by ID
     public void deletePost(String id) {
         postRepo.deleteById(id);
-    }
-
-    // ✅ Get posts by author
-    public List<Post> getPostsByAuthor(String authorName) {
-        return postRepo.findByAuthorName(authorName);
-    }
-
-    // ✅ Get posts by category
-    public List<Post> getPostsByCategory(String category) {
-        return postRepo.findByCategoriesContaining(category);
     }
 }

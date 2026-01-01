@@ -1,16 +1,16 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// src/App.tsx
+import { Routes, Route } from 'react-router-dom';
 import BlogFeed from './components/blog-feed';
 import PostDetails from './pages/post-details';
+import HomePage from './pages/HomePage';
 import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<BlogFeed />} />
-        <Route path="/posts/:id" element={<PostDetails />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/posts/:id" element={<PostDetails />} />
+    </Routes>
   );
 }
 

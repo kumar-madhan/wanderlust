@@ -1,90 +1,111 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import {
   getFeaturedPosts,
   getPostsByCategory,
-} from '../api/posts.api';
-import type { Post } from '../types/post-type';
-import PostCard from './post-card';
-import Skeleton from './skeleton';
-import '../styles/blog.css';
+} from "../api/posts.api";
+import type { Post } from "../types/post-type";
+import styles from "../styles/blog-feed.module.css";
 
 const PAGE_SIZE = 5;
+const CATEGORIES = ["Featured", "Adventure", "Travel"];
 
 export default function BlogFeed() {
-  const [selectedCategory, setSelectedCategory] =
-    useState<string>('featured');
   const [posts, setPosts] = useState<Post[]>([]);
-  const [page, setPage] = useState<number>(0);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [hasMore, setHasMore] = useState<boolean>(true);
+  const [page, setPage] = useState(0);
+  const [category, setCategory] = useState("Featured");
+  const [loading, setLoading] = useState(false);
+  const [hasMore, setHasMore] = useState(true);
 
+  /* 🔹 Load first page when category changes */
   useEffect(() => {
+    resetAndLoad();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [category]);
+
+  async function resetAndLoad() {
     setPosts([]);
     setPage(0);
     setHasMore(true);
-  }, [selectedCategory]);
+    await loadPosts(0, true);
+  }
 
-  useEffect(() => {
-    async function loadPosts() {
-      setLoading(true);
+  async function loadPosts(nextPage: number, replace = false) {
+    if (loading || !hasMore) return;
 
-      try {
-        const data =
-          selectedCategory === 'featured'
-            ? await getFeaturedPosts()
-            : await getPostsByCategory(selectedCategory);
+    setLoading(true);
+    try {
+      const data =
+        category === "Featured"
+          ? await getFeaturedPosts(nextPage, PAGE_SIZE)
+          : await getPostsByCategory(category, nextPage, PAGE_SIZE);
 
-        // client-side pagination slice
-        const start = page * PAGE_SIZE;
-        const end = start + PAGE_SIZE;
-        const pageData = data.slice(start, end);
-
-        setPosts((prev) =>
-          page === 0 ? pageData : [...prev, ...pageData]
-        );
-
-        setHasMore(end < data.length);
-
-      } catch (err) {
-        console.error(err);
-      } finally {
-        setLoading(false);
+      if (data.length < PAGE_SIZE) {
+        setHasMore(false);
       }
-    }
 
-    loadPosts();
-  }, [page, selectedCategory]);
+      setPosts((prev) =>
+        replace ? data : [...prev, ...data]
+      );
+      setPage(nextPage + 1);
+    } catch (err) {
+      console.error("Failed to load posts", err);
+      setHasMore(false);
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
-    <div className="blog-container">
-      <h2>Blog Feed</h2>
+    <section className={styles.wrapper}>
+      <h2 className={styles.title}>Blog Feed</h2>
 
-      <div className="blog-actions">
-        <button onClick={() => setSelectedCategory('featured')}>
-          Featured
-        </button>
-        <button onClick={() => setSelectedCategory('Adventure')}>
-          Adventure
-        </button>
-        <button onClick={() => setSelectedCategory('Travel')}>
-          Travel
-        </button>
+      {/* Categories */}
+      <div className={styles.tabs}>
+        {CATEGORIES.map((cat) => (
+          <button
+            key={cat}
+            className={`${styles.tab} ${
+              category === cat ? styles.active : ""
+            }`}
+            onClick={() => setCategory(cat)}
+          >
+            {cat}
+          </button>
+        ))}
       </div>
 
-      {posts.map((post) => (
-        <PostCard key={post.id} post={post} />
-      ))}
-
-      {loading &&
-        Array.from({ length: 2 }).map((_, i) => (
-          <Skeleton key={i} height={80} />
+      {/* Posts */}
+      <div className={styles.list}>
+        {posts.map((post) => (
+          <Link
+            key={post.id}
+            to={`/posts/${post.id}`}
+            className={styles.card}
+          >
+            <h3>{post.title}</h3>
+            <p className={styles.author}>
+              By {post.authorName}
+            </p>
+            <p className={styles.desc}>
+              {post.description}
+            </p>
+          </Link>
         ))}
 
-      {!loading && hasMore && (
-        <button onClick={() => setPage((p) => p + 1)}>
-          Load more
-        </button>
+        {loading && (
+          <div className={styles.loading}>Loading…</div>
+        )}
+      </div>
+
+      {/* Load More */}
+      {hasMore && !loading && (
+        <div className={styles.loadMore}>
+          <button onClick={() => loadPosts(page)}>
+            Load more
+          </button>
+        </div>
       )}
-    </div>
+    </section>
   );
 }
