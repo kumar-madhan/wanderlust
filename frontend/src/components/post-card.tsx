@@ -1,26 +1,46 @@
 import { useNavigate } from 'react-router-dom';
-import type { Post } from '../types/post-type';
-import '../styles/blog.css';
+import Post from '@/types/post-type';
+import formatPostTime from '@/utils/format-post-time';
+import CategoryPill from '@/components/category-pill';
+import { createSlug } from '@/utils/slug-generator';
+import { TestProps } from '@/types/test-props';
 
-interface PostCardProps {
-  post: Post;
-}
-
-export default function PostCard({ post }: PostCardProps) {
+export default function PostCard({ post, testId = 'postcard' }: { post: Post } & TestProps) {
   const navigate = useNavigate();
-
+  const slug = createSlug(post.title);
   return (
-    <article
-      className="post-card"
-      onClick={() => navigate(`/posts/${post.id}`)}
+    <div
+      className={`active:scale-click group w-full sm:w-1/2 lg:w-1/3 xl:w-1/4`}
+      data-testid={testId}
     >
-      <h3>{post.title}</h3>
-
-      <p className="post-meta">
-        By <strong>{post.authorName}</strong>
-      </p>
-
-      <p>{post.description}</p>
-    </article>
+      <div
+        className={`mb-4 cursor-pointer rounded-lg bg-light shadow-md dark:bg-dark-card ${'sm:mr-8 sm:mt-4'}`}
+        onClick={() => navigate(`/details-page/${slug}/${post._id}`, { state: { post } })}
+      >
+        <div className="h-48 w-full overflow-hidden">
+          <img
+            src={post.imageLink}
+            alt={post.title}
+            className={`sm:group-hover:scale-hover h-full w-full rounded-t-lg object-cover transition-transform ease-in-out`}
+          />
+        </div>
+        <div className="p-3">
+          <div className="mb-1 text-xs text-light-info dark:text-dark-info">
+            {post.authorName} • {formatPostTime(post.timeOfPost)}
+          </div>
+          <h2 className="mb-2 line-clamp-1 text-base font-semibold text-light-title dark:text-dark-title">
+            {post.title}
+          </h2>
+          <p className="line-clamp-2 text-sm text-light-description dark:text-dark-description">
+            {post.description}
+          </p>
+          <div className="mt-4 flex gap-2">
+            {post.categories.slice(0, 3).map((category, index) => (
+              <CategoryPill key={`${category}-${index}`} category={category} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
