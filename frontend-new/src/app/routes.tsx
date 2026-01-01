@@ -19,41 +19,64 @@ import AdminContainer from '@/components/layout/AdminContainer';
 
 import { Role } from '@/types/role-type';
 
+const wrap = (el: JSX.Element) => (
+  <div className="page-animate">{el}</div>
+);
+
 export default function AppRoutes() {
   return (
     <BrowserRouter>
       <ScrollToTop />
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={wrap(<HomePage />)} />
 
-        <Route path="details-page/:title/:postId" element={<DetailsPage />} />
+        <Route
+          path="details-page/:title/:postId"
+          element={wrap(<DetailsPage />)}
+        />
 
         <Route element={<UnprotectedRoute />}>
-          <Route path="signin" element={<SignIn />} />
-          <Route path="signup" element={<SignUp />} />
+          <Route path="signin" element={wrap(<SignIn />)} />
+          <Route path="signup" element={wrap(<SignUp />)} />
         </Route>
 
         <Route
           element={
-            <RequireAuthBlog allowedRole={[Role.Admin, Role.User]} />
+            <RequireAuthBlog
+              allowedRole={[Role.Admin, Role.User]}
+            />
           }
         >
-          <Route path="add-blog" element={<AddBlog />} />
-          <Route path="edit-blog/:postId" element={<EditBlog />} />
+          <Route path="add-blog" element={wrap(<AddBlog />)} />
+          <Route
+            path="edit-blog/:postId"
+            element={wrap(<EditBlog />)}
+          />
         </Route>
 
         <Route
           path="admin"
-          element={<RequireAuth allowedRole={[Role.Admin]} />}
+          element={
+            <RequireAuth allowedRole={[Role.Admin]} />
+          }
         >
           <Route element={<AdminContainer />}>
-            <Route path="users" element={<AdminUsers />} />
-            <Route path="blogs" element={<AdminBlogs />} />
+            <Route
+              path="users"
+              element={wrap(<AdminUsers />)}
+            />
+            <Route
+              path="blogs"
+              element={wrap(<AdminBlogs />)}
+            />
           </Route>
         </Route>
 
-        <Route path="*" element={<div>Not Found</div>} />
+        <Route
+          path="*"
+          element={wrap(<div>Not Found</div>)}
+        />
       </Routes>
     </BrowserRouter>
   );

@@ -1,54 +1,211 @@
-/* FILE: src/index.css */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* =========================
+   GLOBAL TYPOGRAPHY SYSTEM
+   ========================= */
+@layer base {
+  :root {
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont,
+      'Segoe UI', sans-serif;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+  }
+
+  html,
+  body {
+    height: 100%;
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    font-size: var(--text-3xl);
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: var(--text-xl);
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: var(--text-lg);
+    font-weight: 600;
+  }
+
+  p {
+    font-size: var(--text-sm);
+  }
+
+  button,
+  input,
+  textarea {
+    font-family: inherit;
+    font-size: var(--text-sm);
+  }
+}
+
+/* =========================
+   UI UTILITIES
+   ========================= */
+@layer utilities {
+  .page-animate {
+    animation: pageFade 0.35s ease-out;
+  }
+
+  @keyframes pageFade {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .card-hover {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .card-enter {
+    animation: cardFade 0.4s ease both;
+  }
+
+  @keyframes cardFade {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
 
 @layer base {
   :root {
     --bg: #ffffff;
     --surface: #ffffff;
     --card: #f9f9f9;
-
     --text-primary: #111111;
     --text-secondary: #555555;
-
     --border: #e0e0e0;
-    --accent: #6366f1;
-    --accent-hover: #4f46e5;
   }
 
   [data-theme='dark'] {
     --bg: #0f0f0f;
     --surface: #151515;
     --card: #1c1c1c;
-
     --text-primary: #f5f5f5;
     --text-secondary: #b5b5b5;
-
     --border: #2a2a2a;
-    --accent: #818cf8;
-    --accent-hover: #6366f1;
-  }
-
-  html,
-  body {
-    height: 100%;
   }
 
   body {
-    margin: 0;
     background-color: var(--bg);
     color: var(--text-primary);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont,
-      'Segoe UI', sans-serif;
+  }
+}
+@layer components {
+  /* ===================================
+     Shared Card Design Utilities
+     (used by Featured / Latest / Grid)
+     =================================== */
+
+  .card-base {
+    @apply rounded-lg border bg-slate-50 shadow-md
+      dark:border-none dark:bg-dark-card;
+  }
+
+  .card-interactive {
+    @apply cursor-pointer transition-transform active:scale-95;
+  }
+
+  .card-image-hover {
+    @apply transition-transform ease-in-out
+      sm:group-hover:scale-105;
   }
 }
 
+
 @layer utilities {
-  .card {
-    background-color: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 0.75rem;
+  /* =========================
+     Page / Section Animations
+     ========================= */
+
+  .page-enter {
+    animation: pageFadeIn 0.35s ease-out both;
+  }
+
+  .section-enter {
+    animation: sectionSlideUp 0.4s ease-out both;
+  }
+
+  @keyframes pageFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes sectionSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  /* Smooth theme transitions */
+  html {
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease;
+  }
+
+  body,
+  header,
+  main,
+  section,
+  article,
+  aside,
+  footer {
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease,
+      border-color 0.25s ease,
+      box-shadow 0.25s ease;
   }
 }

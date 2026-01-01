@@ -8,15 +8,18 @@ export default function LatestPostCard({ post }: { post: Post }) {
 
   return (
     <div
-      className="cursor-pointer rounded-lg px-4 py-3 transition-colors hover:bg-black/5 dark:hover:bg-white/5"
+      className="card-base card-interactive p-3"
       onClick={() =>
-        navigate(`/details-page/${slug}/${post._id}`, {
-          state: { post },
-        })
+        navigate(`/details-page/${slug}/${post._id}`, { state: { post } })
       }
     >
-      <div className="text-sm font-medium">{post.title}</div>
-      <div className="text-xs opacity-70">{post.authorName}</div>
+      <h4 className="line-clamp-1 text-sm font-semibold">
+        {post.title}
+      </h4>
+
+      <p className="mt-1 text-xs opacity-70">
+        By {post.authorName}
+      </p>
     </div>
   );
 }

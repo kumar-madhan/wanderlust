@@ -18,7 +18,7 @@ export default function BlogFeed() {
     setLoadingFeatured(true);
     const mockFeatured: Post[] = [
       {
-        id: '1',
+        _id: '1',
         title: 'Journey Beyond Horizons',
         description: 'Discover breathtaking landscapes and hidden gems. Epic adventures await in untouched wilderness.',
         authorName: 'Alex Wanderer',
@@ -27,7 +27,7 @@ export default function BlogFeed() {
         categories: ['Featured', 'Travel']
       },
       {
-        id: '2',
+        _id: '2',
         title: 'Peak Perfection',
         description: 'Scaling majestic mountains, breathing alpine air. Where perseverance meets raw natural beauty.',
         authorName: 'Peak Explorer',
@@ -36,7 +36,7 @@ export default function BlogFeed() {
         categories: ['Featured', 'Adventure']
       },
       {
-        id: '6',
+        _id: '6',
         title: 'Ocean Odyssey',
         description: 'Diving into vibrant coral reefs and underwater paradises that few have witnessed.',
         authorName: 'Dive Master',
@@ -56,7 +56,7 @@ export default function BlogFeed() {
     setLoadingLatest(true);
     const mockLatest: Post[] = [
       {
-        id: '3',
+        _id: '3',
         title: 'Forest Whispers',
         description: 'Serene walks through ancient woods reveal nature\'s timeless secrets and hidden trails.',
         authorName: 'Nature Guide',
@@ -65,7 +65,7 @@ export default function BlogFeed() {
         categories: ['Nature']
       },
       {
-        id: '4',
+        _id: '4',
         title: 'Urban Nights',
         description: 'Neon-lit streets, rooftop cityscapes, and stories from the heartbeat of the metropolis.',
         authorName: 'City Scout',
@@ -74,7 +74,7 @@ export default function BlogFeed() {
         categories: ['Travel']
       },
       {
-        id: '5',
+        _id: '5',
         title: 'Desert Dreams',
         description: 'Endless golden dunes under starlit skies create surreal dreamscapes.',
         authorName: 'Desert Nomad',
@@ -83,7 +83,7 @@ export default function BlogFeed() {
         categories: ['Adventure']
       },
       {
-        id: '7',
+        _id: '7',
         title: 'Lake Serenity',
         description: 'Mirror-like waters reflecting snow-capped mountains at golden hour.',
         authorName: 'Lake Poet',
@@ -92,7 +92,7 @@ export default function BlogFeed() {
         categories: ['Nature']
       },
       {
-        id: '8',
+        _id: '8',
         title: 'Island Hopping',
         description: 'Crystal waters and palm-fringed beaches across tropical paradise.',
         authorName: 'Island Hopper',
@@ -140,7 +140,7 @@ export default function BlogFeed() {
               <FeaturedPostCardSkeleton key={`featured-skel-${i}`} />
             ))
           : featuredPosts.map((post) => (
-              <FeaturedPostCard key={post.id} post={post} />
+              <FeaturedPostCard key={post._id} post={post} />
             ))}
       </div>
 
@@ -174,8 +174,21 @@ export default function BlogFeed() {
             ? Array.from({ length: 6 }).map((_, i) => (
                 <LatestPostCardSkeleton key={`latest-skel-${i}`} />
               ))
-            : latestPosts.map((post, index) => (
-                <LatestPostCard key={post.id} post={post} />
+            : latestPosts.map((post) => (
+                <div
+                  key={post._id}
+                  className="card-hover card-enter rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 p-6 text-white shadow"
+                >
+                  <h3 className="text-lg font-semibold">
+                    {post.title}
+                  </h3>
+                  <p className="mt-1 text-xs opacity-70">
+                    By {post.authorName}
+                  </p>
+                  <p className="mt-3 text-sm opacity-80">
+                    {post.description}
+                  </p>
+                </div>
               ))}
         </div>
       </div>
