@@ -5,43 +5,23 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 const useAuthData = (): AuthData => {
-  const location = useLocation;
+  const location = useLocation(); // ✅ fixed parentheses
   const user = userState.getUser();
 
   const [data, setData] = useState<AuthData>({
     _id: user?._id || '',
     role: user?.role || '',
-    token: '',
+    token: localStorage.getItem('token') || '', // ✅ pull from localStorage
     loading: true,
   });
 
   useEffect(() => {
-    setData({
-      ...data,
-      token: '',
-    });
-  }, [user?._id]);
-
-  useEffect(() => {
-    async function fetchToken() {
-      try {
-        const res = await axiosInstance.get(`/api/auth/check/${data._id}`);
-        setData({
-          ...data,
-          token: res.data?.data,
-          loading: false,
-        });
-      } catch (error) {
-        console.error('Error fetching token:', error);
-        setData({
-          ...data,
-          token: '',
-          loading: false,
-        });
-      }
-    }
-    fetchToken();
-  }, [location]);
+    // ✅ only update loading state
+    setData((prev) => ({
+      ...prev,
+      loading: false,
+    }));
+  }, [location, user?._id]);
 
   return data;
 };

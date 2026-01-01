@@ -5,16 +5,17 @@ import Post from '@/types/post-type';
 import { PostCardSkeleton } from '@/components/skeletons/post-card-skeleton';
 import Header from '@/layouts/header-layout';
 import axiosInstance from '@/helpers/axios-instance';
+
 function HomePage() {
   const [posts, setPosts] = useState<Post[]>([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await axiosInstance.get('/api/posts');
+        const res = await axiosInstance.get('/posts'); // ✅ fixed
         setPosts(res.data);
       } catch (error) {
-        console.error(error);
+        console.error('Error fetching posts:', error);
       }
     };
     fetchPosts();
