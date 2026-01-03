@@ -1,10 +1,12 @@
+// src/pages/home-page.tsx
+
 import { useEffect, useState } from 'react';
 import BlogFeed from '@/components/blog-feed';
 import PostCard from '@/components/post-card';
-import Post from '@/types/post-type';
+import { Post } from '@/types/post-type';
 import { PostCardSkeleton } from '@/components/skeletons/post-card-skeleton';
 import Header from '@/layouts/header-layout';
-import axiosInstance from '@/helpers/axios-instance';
+import { getAllPosts } from '@/services/post-service';
 
 function HomePage() {
   const [posts, setPosts] = useState<Post[]>([]);
@@ -12,8 +14,8 @@ function HomePage() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await axiosInstance.get('/posts'); // ✅ fixed
-        setPosts(res.data);
+        const data = await getAllPosts();
+        setPosts(data);
       } catch (error) {
         console.error('Error fetching posts:', error);
       }
@@ -31,10 +33,12 @@ function HomePage() {
         </h1>
         <div className="flex flex-wrap">
           {posts.length === 0
-            ? Array(8)
-                .fill(0)
-                .map((_, index) => <PostCardSkeleton key={index} />)
-            : posts.map((post) => <PostCard key={post._id} post={post} />)}
+            ? Array.from({ length: 8 }).map((_, index) => (
+                <PostCardSkeleton key={index} />
+              ))
+            : posts.map((post) => (
+                <PostCard key={post.id} post={post} />
+              ))}
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import com.wanderlust.model.User;
 import com.wanderlust.repository.UserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
 import java.util.List;
 
 @Component

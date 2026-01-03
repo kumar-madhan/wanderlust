@@ -1,48 +1,44 @@
-import FormBlog from '@/components/form-blog';
+// src/pages/edit-blog.tsx
+
 import { useEffect, useState } from 'react';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
-import Post from '@/types/post-type';
-import axios from 'axios';
+import { useNavigate, useParams } from 'react-router-dom';
+import FormBlog from '@/components/form-blog';
+import { Post } from '@/types/post-type';
+import axiosInstance from '@/helpers/axios-instance';
 import useAuthData from '@/hooks/useAuthData';
 
 const EditBlog = () => {
-  const { state } = useLocation();
-  const [post, setPost] = useState<Post>(state?.post);
-  const initialVal = post === undefined;
-  const [loading, setIsLoading] = useState(initialVal);
-  const { postId } = useParams();
+  const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
+  const { role } = useAuthData();
 
-  const userData = useAuthData();
+  const [post, setPost] = useState<Post | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const getPostById = async () => {
+    if (role !== 'ADMIN') {
+      navigate(-1);
+      return;
+    }
+
+    const fetchPost = async () => {
       try {
-        await axios.get(import.meta.env.VITE_API_PATH + `/api/posts/${postId}`).then((response) => {
-          setIsLoading(false);
-          setPost(response.data);
-        });
-      } catch (error) {
-        console.log(error);
+        const { data } = await axiosInstance.get(`/posts/${id}`);
+        setPost(data);
+      } catch {
+        navigate('/');
+      } finally {
+        setLoading(false);
       }
     };
-    if (post === undefined || post !== state?.post) {
-      getPostById();
-    }
-  }, [state?.post]);
 
-  const navigate = useNavigate();
+    fetchPost();
+  }, [id, role, navigate]);
 
-  if (userData?.role === 'USER' && post?.authorId !== userData?._id) {
-    navigate(-1);
-  }
+  if (loading) return <h1>Loading...</h1>;
+  if (!post) return null;
 
-  if (!loading) {
-    return (
-      <>
-        <FormBlog postId={postId} type="edit" post={post} />
-      </>
-    );
-  } else return <h1>Loading...</h1>;
+  return <FormBlog postId={id} type="edit" post={post} />;
 };
 
 export default EditBlog;

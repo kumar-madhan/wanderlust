@@ -4,8 +4,8 @@ import AddBlog from '@/pages/add-blog';
 import DetailsPage from '@/pages/details-page';
 import ScrollToTop from '@/components/scroll-to-top';
 import Footer from '@/layouts/footer-layout';
-import SignIn from '@/pages/signin-page';
-import SignUp from '@/pages/signup-page';
+import SignIn from '@/pages/signin-page.tsx';
+import SignUp from '@/pages/signup-page.tsx';
 import AdminUsers from '@/pages/admin-users';
 import AdminBlogs from '@/pages/admin-blogs';
 import NotFound from '@/pages/not-found';
@@ -34,9 +34,9 @@ function App() {
               <Route path="signin" element={<SignIn />} />
               <Route path="signup" element={<SignUp />} />
             </Route>
-            <Route element={<RequireAuthBlog allowedRole={[Role.Admin, Role.User]} />}>
-              <Route path="add-blog" element={<AddBlog />} />
-              <Route path="edit-blog/:postId" element={<EditBlog />} />
+            <Route element={<RequireAuthBlog allowedRole={['ADMIN']} />}>
+              <Route path="/add-blog" element={<AddBlog />} />
+              <Route path="/edit-blog/:id" element={<EditBlog />} />
             </Route>
             <Route path="admin" element={<RequireAuth allowedRole={[Role.Admin]} />}>
               <Route element={<AdminContainer />}>

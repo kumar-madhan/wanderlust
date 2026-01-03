@@ -13,7 +13,7 @@ import { AxiosError, isAxiosError } from 'axios';
 import { useForm } from 'react-hook-form';
 import { TFormBlogSchema, formBlogSchema } from '@/lib/types';
 import { zodResolver } from '@hookform/resolvers/zod';
-import Post from '@/types/post-type';
+import { Post } from '@/types/post-type';
 import useAuthData from '@/hooks/useAuthData';
 
 interface FormBlogPropType {

@@ -1,114 +1,831 @@
 [
   {
-    "authorName": "Emma Wilson",
-    "title": "Exploring the Alps: A Journey Through Snow and Sky",
-    "description": "The Alps are more than mountains — they are a symphony of white peaks, frozen lakes, and cozy villages that invite you to explore.",
-    "imageLink": "https://images.unsplash.com/photo-1526481280691-3e4e9c1d4a1d",
-    "categories": ["Adventure", "Europe", "Mountains"],
-    "isFeaturedPost": true
+    "authorName": "Nina Patel",
+    "title": "A Beginner's Guide to Solo Travel",
+    "description": "Complete solo travel system featuring 12 beginner-friendly destinations (Chiang Mai, Lisbon, Tbilisi), safety protocols (Find My iPhone sharing, hotel safe combinations), packing cubes organization, budget templates ($30-50/day), female solo packing extras, rideshare safety checklists, local SIM strategies, and emergency contact trees for 5 continents.",
+    "imageLink": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429",
+    "categories": [
+      "Travel",
+      "Lifestyle"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-02T11:00:00Z"
   },
   {
-    "authorName": "Carlos Rivera",
-    "title": "Street Food Diaries: Bangkok After Midnight",
-    "description": "The sizzling woks and the aroma of lemongrass tell a story of Thai culture that comes alive under the moonlight.",
-    "imageLink": "https://images.unsplash.com/photo-1532634896-26909d0d4b28",
-    "categories": ["Food", "Asia", "Culture"],
-    "isFeaturedPost": true
+    "authorName": "Mei Tanaka",
+    "title": "A Beginner’s Guide to Fermentation at Home",
+    "description": "A safe and approachable introduction to fermentation covering salt ratios, clean containers, and how to spot healthy activity versus spoilage. Includes starter recipes for sauerkraut, quick kimchi, and fermented chili paste, plus storage guidance and flavor variations. Explains how temperature affects speed, why bubbles matter, and how to troubleshoot mushy textures or overly sour batches.",
+    "imageLink": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38",
+    "categories": [
+      "Food",
+      "DIY",
+      "Science"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-02T20:30:00Z"
   },
   {
-    "authorName": "Sophia Martins",
-    "title": "Digital Nomads’ Guide to Lisbon",
-    "description": "From pastel de nata to coworking cafes, Lisbon has become the heart of Europe’s digital nomad revolution.",
-    "imageLink": "https://images.unsplash.com/photo-1518684079-3c830dcef090",
-    "categories": ["Work", "Europe", "Lifestyle"],
-    "isFeaturedPost": false
+    "authorName": "Mason Wright",
+    "title": "A Beginner’s Guide to Investing (Without the Noise)",
+    "description": "A calm introduction to investing that explains risk, time horizon, diversification, and fees in practical terms. Covers how to set goals, build an emergency fund first, and choose a simple long-term approach. Includes common pitfalls—overtrading, chasing hype, ignoring costs—and a checklist for evaluating any investment product. Designed for people who want clarity rather than constant market updates.",
+    "imageLink": "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa",
+    "categories": [
+      "Finance",
+      "Education"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-03T03:30:00Z"
+  },
+  {
+    "authorName": "Keisha Robinson",
+    "title": "A Beginner’s Guide to Podcasting",
+    "description": "A beginner podcast setup guide covering format, recording workflow, and how to ship episodes consistently. Includes mic recommendations by budget, quiet recording tips for small rooms, and a simple editing approach that avoids over-processing. Covers episode planning, basic publishing steps, and ways to improve audio clarity over time. Focuses on repeatable systems so the show survives beyond the first month.",
+    "imageLink": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618",
+    "categories": [
+      "Media",
+      "Tech",
+      "Education"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-03T09:00:00Z"
+  },
+  {
+    "authorName": "Nina Patel",
+    "title": "A Beginner’s Guide to Solo Travel",
+    "description": "A confidence-first solo travel guide with practical templates: planning checklists, day‑one routines, accommodation screening tips, and how to stay connected without over-sharing your location. Includes budgeting basics, packing for flexibility, dealing with loneliness, and simple safety habits for walking, transit, and nightlife—without turning the trip into a constant risk assessment.",
+    "imageLink": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429",
+    "categories": [
+      "Travel",
+      "Lifestyle"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-02T11:00:00Z"
+  },
+  {
+    "authorName": "Peter Nowak",
+    "title": "A Minimalist Travel Kit That Actually Works",
+    "description": "A minimalist packing framework that keeps you comfortable without overpacking. Includes a capsule wardrobe plan, laundry rhythm, and a compact toiletries list that avoids duplicates. Covers selecting one pair of walking shoes, how to pack tech essentials, and how to stay prepared for weather changes with a single outer layer. Designed for travelers who want lighter bags and faster airport days.",
+    "imageLink": "https://images.unsplash.com/photo-1526481280691-3e4e9c1d4a2d",
+    "categories": [
+      "Travel",
+      "Lifestyle"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-02T23:00:00Z"
+  },
+  {
+    "authorName": "Daniel Cho",
+    "title": "A Photographer’s Guide to Iceland",
+    "description": "An Iceland photography plan that focuses on timing and conditions: when waterfalls look best, how to safely shoot near waves and ice, and what to do when weather changes every hour. Includes a packing list for rain and wind, simple exposure tips for snow scenes, and location planning to reduce driving fatigue. Covers how to keep shots original by looking for angles, textures, and foreground stories.",
+    "imageLink": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    "categories": [
+      "Photography",
+      "Nature",
+      "Europe"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-03T05:30:00Z"
+  },
+  {
+    "authorName": "Ivy Chen",
+    "title": "A Practical Guide to Journaling for Clarity",
+    "description": "A journaling system aimed at decision-making and stress reduction, not perfect writing. Includes prompts for sorting priorities, tracking mood patterns, and planning weekly actions. Covers quick formats like two-minute brain dumps, end-of-day reviews, and problem-solving pages. Also includes ways to keep journaling private, build the habit without guilt, and stop using journaling as a loop for worry.",
+    "imageLink": "https://images.unsplash.com/photo-1455390582262-044cdead277a",
+    "categories": [
+      "Wellness",
+      "Lifestyle",
+      "Mindfulness"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-03T00:30:00Z"
+  },
+  {
+    "authorName": "James Okoye",
+    "title": "African Safari Packing List",
+    "description": "Complete packing system for Masai Mara, Serengeti, and Kruger safaris featuring neutral-colored quick-dry clothing, Tilley hats, Buff neck gaiters, bino harnesses (8x42), 400-600mm telephoto lenses, malaria prophylaxis schedules, game drive layering systems, lodge dress code protocols, cultural respect guidelines, and backup power solutions for remote tented camps.",
+    "imageLink": "https://images.unsplash.com/photo-1558618047-3c8c76bbb17e",
+    "categories": [
+      "Travel",
+      "Africa",
+      "Wildlife"
+    ],
+    "featuredPost": false
+  },
+  {
+    "authorName": "Liam Anderson",
+    "title": "Backpacking Across South America",
+    "description": "A budget-friendly, multi-country backpacking plan across Peru, Bolivia, and Chile with realistic pacing and altitude management. Covers transport choices, where to spend vs save, and how to pack for climate swings from high plains to coastal deserts. Includes safety habits for night buses, a simple budgeting method, and how to keep plans flexible without missing key sites during limited seasonal windows.",
+    "imageLink": "https://images.unsplash.com/photo-1501785888041-af3ef285b471",
+    "categories": [
+      "Travel",
+      "Adventure",
+      "South America"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-03T06:30:00Z"
+  },
+  {
+    "authorName": "Clara Nguyen",
+    "title": "Baking Bread for the First Time (No Stress)",
+    "description": "A beginner bread guide designed to prevent common failures: dense loaves, dry crumb, and weak rise. Explains mixing, resting, shaping, and how to judge fermentation by feel rather than strict timings. Includes a small troubleshooting section, pan alternatives, and how to store bread so it stays good for days. Also offers easy flavor upgrades like herbs, cheese, and seeds.",
+    "imageLink": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73",
+    "categories": [
+      "Food",
+      "DIY",
+      "Home"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-02T22:30:00Z"
+  },
+  {
+    "authorName": "Arjun Menon",
+    "title": "Beginner Strength Training: A 4-Week Plan",
+    "description": "A simple strength program for beginners built around technique, recovery, and steady progression. Includes warmups, core lifts, and accessory movements with clear cues to avoid common mistakes. Covers how to choose weights, when to increase load, and how to track workouts. Also includes basic nutrition guidance and rest-day routines so the plan feels sustainable instead of punishing.",
+    "imageLink": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438",
+    "categories": [
+      "Fitness",
+      "Health"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-02T22:00:00Z"
+  },
+  {
+    "authorName": "Ethan Wallace",
+    "title": "Budgeting Without Spreadsheets: A Simple System",
+    "description": "A beginner-friendly budgeting approach that avoids complex spreadsheets and focuses on clear categories and weekly check-ins. Covers how to estimate fixed costs, set flexible spending limits, and create a buffer for irregular expenses. Includes tips for separating savings, reducing impulse purchases, and tracking progress with minimal friction. Ideal for people who want control without turning money management into a second job.",
+    "imageLink": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+    "categories": [
+      "Finance",
+      "Lifestyle"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-02T20:00:00Z"
+  },
+  {
+    "authorName": "Noah Kim",
+    "title": "Building a Home Lab for DevOps Practice",
+    "description": "A step-by-step home lab plan using lightweight hardware and free tooling to practice CI/CD, containers, and monitoring. Covers network layout, DNS basics, reverse proxy setup, and how to structure services with Docker Compose or a small Kubernetes distribution. Includes a safe approach to secrets management, backup strategy, and a list of mini-projects (logs, metrics, deployments) to build real operational skills.",
+    "imageLink": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "categories": [
+      "Tech",
+      "DevOps",
+      "HomeLab"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-02T19:00:00Z"
+  },
+  {
+    "authorName": "Alice Smith",
+    "title": "City Lights: A Night Photography Guide",
+    "description": "Technical blueprint for urban night photography featuring 25 global locations (Tokyo Tower, Marina Bay Sands, Burj Khalifa), Nikon Z6II settings (ISO 800-6400, f/4-8, 10-30s exposures), light painting techniques, drone flight permissions, 14-stop ND filter workflows, urban security protocols, and Lightroom mobile presets for cinematic blue hour color grading.",
+    "imageLink": "https://images.unsplash.com/photo-1499346030926-9a72daac6c63",
+    "categories": [
+      "Photography",
+      "City",
+      "Night"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-02T10:00:00Z"
+  },
+  {
+    "authorName": "Tomás Rivera",
+    "title": "Coffee Roasting at Home",
+    "description": "Complete home roasting workflow using Whirley Pop, FreshRoast SR800, or modified air popcorn popper with 30-minute roast profiles for Ethiopian Yirgacheffe, Colombian Supremo, and Sumatra Mandheling. Bean sourcing from 5 online roasters, roast level identification (City, Full City, Vienna), cooling techniques, degassing periods, storage solutions, cupping protocols, and grinder maintenance schedules for optimal flavor extraction.",
+    "imageLink": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
+    "categories": [
+      "Food",
+      "DIY"
+    ],
+    "featuredPost": false
+  },
+  {
+    "authorName": "Diego Alvarez",
+    "title": "Cycling Barcelona: Routes Beyond the Tourist Loop",
+    "description": "A cyclist’s Barcelona guide with scenic coastal rides, gentle climbs into Collserola, and quiet morning routes through less-crowded neighborhoods. Includes bike rental tips, safety advice for traffic circles, where to refill water, and how to time rides to avoid heat and heavy pedestrian zones. Also suggests cafés that welcome cyclists and easy recovery activities for rest days.",
+    "imageLink": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
+    "categories": [
+      "Sports",
+      "Europe",
+      "City"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-02T21:00:00Z"
+  },
+  {
+    "authorName": "Lina Johansson",
+    "title": "Decluttering Your Home Without Getting Stuck",
+    "description": "A realistic decluttering method focused on momentum: start small, set a timer, and make quick decisions with clear rules. Covers how to handle sentimental items, paperwork, and clothing without creating bigger messes. Includes a weekly plan that fits busy schedules, donation and recycling shortcuts, and a simple way to prevent clutter from returning by improving storage and daily reset habits.",
+    "imageLink": "https://images.unsplash.com/photo-1524758631624-e2822e304c36",
+    "categories": [
+      "Home",
+      "Lifestyle"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-02T21:30:00Z"
+  },
+  {
+    "authorName": "Ahmed Nasser",
+    "title": "Desert Coffee Traditions Across the Middle East",
+    "description": "A cultural exploration of coffee rituals: roasting, spicing, serving etiquette, and how hospitality shapes gatherings. Covers regional differences, common flavor profiles (cardamom, saffron), and the role of coffee in celebrations and everyday visiting. Includes a practical section on recreating the experience at home—tools, basic brewing ratios, and simple sweets that pair well without overpowering the coffee.",
+    "imageLink": "https://images.unsplash.com/photo-1511920170033-f8396924c348",
+    "categories": [
+      "Culture",
+      "Food",
+      "Middle East"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-03T02:30:00Z"
   },
   {
     "authorName": "Omar Khalid",
     "title": "Desert Stars: Camping in Wadi Rum",
-    "description": "Spend a night in Jordan’s red desert under a sky filled with stars, where silence speaks louder than words.",
+    "description": "4-day Bedouin-guided camping itinerary through Wadi Rum Protected Area featuring Lawrence's Spring, Khazali Canyon petroglyphs, red sand dune climbs, and Rakabat Canyon hikes. Complete gear list (4Season sleeping bags, MSR stoves, Katadyn filters), 4x4 rental comparisons ($80-120/day), stargazing equipment (Sky-Watcher scopes), traditional zarb cooking experiences, and optimal October-April camping window.",
     "imageLink": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-    "categories": ["Adventure", "Middle East", "Nature"],
-    "isFeaturedPost": false
+    "categories": [
+      "Adventure",
+      "Middle East",
+      "Nature"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-02T09:30:00Z"
   },
   {
-    "authorName": "John Doe",
-    "title": "A Journey Through the Marvelous Beaches of Maldives and a marvelous experience",
-    "imageLink": "https://i.ibb.co/3z72vmc/clean-lake-mountains-range-trees-nature-4k.webp",
-    "categories": ["Travel", "Beaches"],
-    "description": "The Maldives is a tropical paradise known for its stunning beaches, crystal-clear waters, and vibrant marine life. In this journey, we explore the breathtaking beauty of the Maldives' beaches. From the white sands to the vibrant coral reefs, there's something for every traveler.",
-    "isFeaturedPost": true
+    "authorName": "Leila Hassan",
+    "title": "Digital Detox in the Japanese Alps",
+    "description": "7-day technology-free retreat in Nagano Prefecture featuring forest bathing, onsen soaking, and traditional ryokan stays. Daily schedule includes morning meditation, wild foraging with local guides, kaiseki dinners with seasonal mountain vegetables, and stargazing workshops. Complete disconnection from WiFi and phones amidst Japan's pristine alpine wilderness.",
+    "imageLink": "https://images.unsplash.com/photo-1540979383671-f1d75af90416",
+    "categories": [
+      "Wellness",
+      "Asia",
+      "Nature"
+    ],
+    "featuredPost": false
   },
   {
-    "authorName": "Alice Smith",
-    "title": "Capturing the Cityscape at Night: A Mesmerizing Experience",
-    "imageLink": "https://i.ibb.co/y8vQnDc/c4fedab1-4041-4db5-9245-97439472cf2c.webp",
-    "categories": ["Travel", "City", "Night"],
-    "description": "Discover the magic of cityscapes at night in this captivating journey. The city lights, towering skyscrapers, and bustling streets create a unique atmosphere that is truly mesmerizing.",
-    "isFeaturedPost": true
+    "authorName": "Sophia Martins",
+    "title": "Digital Nomads' Guide to Lisbon",
+    "description": "Complete Lisbon workation blueprint featuring 15 coworking spaces (Second Home, Heden, Second Space) with day pass pricing (€15-25), 40+ cafés with reliable WiFi (Fábrica Coffee Roasters, Nicolau), Time Doctor-tested internet speeds, monthly rental listings under €1,200, pastel de nata rankings, surf lesson schedules at Carcavelos, and 90-day Schengen visa extension strategies.",
+    "imageLink": "https://images.unsplash.com/photo-1518684079-3c830dcef090",
+    "categories": [
+      "Work",
+      "Europe",
+      "Lifestyle"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-02T09:00:00Z"
   },
   {
-    "authorName": "Jane Wilson",
-    "title": "Embracing Adventure: Exploring the Great Outdoors",
-    "imageLink": "https://i.ibb.co/d0g42nr/FPO-BOR-100-800x600.webp",
-    "categories": ["Travel", "Adventure", "Nature"],
-    "description": "Get ready to experience the thrill of outdoor adventures in some of the world's most beautiful natural settings. From hiking and camping to white-water rafting, this journey takes you to the heart of nature and offers an adrenaline rush like no other.",
-    "isFeaturedPost": true
+    "authorName": "Sophia Martins",
+    "title": "Digital Nomads’ Guide to Lisbon",
+    "description": "A work-first Lisbon guide with coworking picks, laptop-friendly cafés, and realistic day plans that mix deep work with neighborhood walks. Includes guidance on transit cards, common rental pitfalls, finding stable Wi‑Fi, and choosing areas that match your pace—quiet for focus, lively for community, or coastal for a surf-and-work rhythm.",
+    "imageLink": "https://images.unsplash.com/photo-1518684079-3c830dcef090",
+    "categories": [
+      "Work",
+      "Europe",
+      "Lifestyle"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-02T09:00:00Z"
   },
   {
-    "authorName": "David Brown",
-    "title": "London Skyline: An Iconic View of the British Capital",
-    "imageLink": "https://i.ibb.co/BNjv5Nn/London-Skyline-125508655.webp",
-    "categories": ["Travel", "City", "Landmarks"],
-    "description": "Marvel at the iconic London skyline, featuring historic landmarks like Big Ben, the London Eye, and the Shard. Join us on a journey to explore the rich history and modernity of the British capital through its stunning skyline.",
-    "isFeaturedPost": true
+    "authorName": "Lucas Fernández",
+    "title": "Exploring Patagonia's Wild Landscapes",
+    "description": "21-day Patagonia circuit hitting Torres del Paine (W Trek), El Chaltén (Fitz Roy), Perito Moreno Glacier, Ushuaia Tierra del Fuego, and El Calafate with daily hiking distances (15-25km), microbus schedules, refugio reservation systems, windproof clothing layers for 60km/h gusts, Calafate berry foraging seasons, and penguin colony viewing protocols.",
+    "imageLink": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+    "categories": [
+      "Adventure",
+      "South America",
+      "Nature"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-02T11:30:00Z"
   },
   {
-    "authorName": "Ella Davis",
-    "title": "Serenity in Nature: Finding Peace Amidst Scenic Beauty",
-    "imageLink": "https://i.ibb.co/d0g42nr/FPO-BOR-100-800x600.webp",
-    "categories": ["Nature", "Scenic", "Tranquil"],
-    "description": "Find solace and serenity in the heart of nature's most scenic landscapes. This journey takes you to tranquil forests, serene lakes, and picturesque countryside. Immerse yourself in the beauty of the natural world and experience true peace.",
-    "isFeaturedPost": true
+    "authorName": "Lucas Fernández",
+    "title": "Exploring Patagonia’s Wild Landscapes",
+    "description": "A route-driven Patagonia guide that balances famous viewpoints with logistics that often get missed: bus timing, wind realities, booking windows, and food planning in remote towns. Includes day-hike suggestions, multi-day trek prep, weather layering, and how to adapt plans quickly when conditions shift. Aimed at travelers who want wilderness without chaos.",
+    "imageLink": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+    "categories": [
+      "Adventure",
+      "South America",
+      "Nature"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-02T11:30:00Z"
   },
   {
-    "authorName": "Robert Johnson",
-    "title": "Chasing Sunsets: The Beauty of Evening by the Beach",
-    "imageLink": "https://i.ibb.co/52mk2Yq/sunset-pier.webp",
-    "categories": ["Travel", "Beaches", "Sunset"],
-    "description": "Witness the breathtaking beauty of sunsets by the beach. As the sun dips below the horizon, it paints the sky with hues of orange, pink, and gold. This journey captures the magical moments of evening by the sea.",
-    "isFeaturedPost": false
+    "authorName": "Emma Wilson",
+    "title": "Exploring the Alps: A Journey Through Snow and Sky",
+    "description": "Comprehensive 10-day ski touring expedition across Chamonix, Zermatt, and Cortina d'Ampezzo featuring 5,000m+ vertical gain itineraries, avalanche safety protocols, hut-to-hut booking systems, and glacier travel techniques. Essential gear includes AT skis, Dynafit bindings, BCA shovels, Black Diamond probes, and layered merino systems for -20°C conditions. Best February-March window for stable snowpack and optimal powder days.",
+    "imageLink": "https://images.unsplash.com/photo-1526481280691-3e4e9c1d4a1d",
+    "categories": [
+      "Adventure",
+      "Europe",
+      "Mountains"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-02T08:00:00Z"
   },
   {
-    "authorName": "Sophia White",
-    "title": "City Lights: A Spectacle After Dark",
-    "imageLink": "https://i.ibb.co/KLwfZzG/Maldives-1024x767.webp",
-    "categories": ["Travel", "City", "Night"],
-    "description": "Experience the vibrant energy of cities after dark. The city lights, bustling streets, and lively nightlife create a spectacle that must be seen to be believed. Join us for a journey through the electrifying nightscapes of urban hubs.",
-    "isFeaturedPost": false
+    "authorName": "Sofia Papadopoulos",
+    "title": "Ferry Hopping the Norwegian Fjords",
+    "description": "14-day public ferry itinerary connecting Bergen, Flam, Alesund, Trondheim, and Lofoten Islands without a car. Complete timetables, cabin recommendations, seafood restaurant stops, hiking trails from ferry ports, northern lights viewing windows, and budget tips for Norway's expensive coastal express routes during summer midnight sun season.",
+    "imageLink": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957",
+    "categories": [
+      "Travel",
+      "Europe"
+    ],
+    "featuredPost": false
   },
   {
-    "authorName": "Michael Clark",
-    "title": "Mountain Adventures: Scaling New Heights",
-    "imageLink": "https://i.ibb.co/qxFMj1H/sunset-horizon-clean-sky-nature.webp",
-    "categories": ["Travel", "Adventure", "Mountains"],
-    "description": "Embark on thrilling mountain adventures in some of the world's most spectacular mountain ranges. From trekking through alpine meadows to conquering challenging peaks, this journey takes you to new heights in the world of adventure.",
-    "isFeaturedPost": false
+    "authorName": "Maria Rossi",
+    "title": "Hidden Cafés of Rome",
+    "description": "A local-style café guide with places chosen for quality, calm seating, and strong espresso rather than just famous addresses. Includes what to order, how to read the menu, and when to visit to avoid lines. Covers neighborhood hopping on foot, pairing coffee with small pastries, and how to enjoy the pace—standing at the bar when busy, lingering at quieter spots when the city softens.",
+    "imageLink": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0",
+    "categories": [
+      "Food",
+      "Europe",
+      "City"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-03T06:00:00Z"
   },
   {
-    "authorName": "Olivia Taylor",
-    "title": "Historical Sites: Exploring Ancient Landmarks",
-    "imageLink": "https://i.ibb.co/d0g42nr/FPO-BOR-100-800x600.webp",
-    "categories": ["Travel", "History", "Landmarks"],
-    "description": "Embark on a journey to explore historical sites and ancient landmarks that tell the stories of civilizations past. Uncover the secrets of the past as you visit historic sites and delve into the mysteries of history.",
-    "isFeaturedPost": false
+    "authorName": "James Parker",
+    "title": "Hiking the Pacific Crest Trail",
+    "description": "180-day thru-hike strategy from Campo to Manning Park Park with resupply schedules (14 towns), water cache coordinates, snow season avoidance (June 15 start), gear weight optimization (base weight <12lbs), Sierra Pass weather windows, Oregon PCTA permits, bear canister rentals, and Kennedy Meadows restaurant recommendations.",
+    "imageLink": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    "categories": [
+      "Adventure",
+      "Hiking",
+      "Nature"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-02T10:30:00Z"
   },
   {
-    "authorName": "William Harris",
-    "title": "Forest Retreat: Discovering Peace in Nature's Embrace",
-    "imageLink": "https://i.ibb.co/KLwfZzG/Maldives-1024x767.webp",
-    "categories": ["Nature", "Forests", "Retreat"],
-    "description": "Find solace in the tranquility of the forest. This retreat into nature's embrace allows you to disconnect from the bustling world and discover the peaceful beauty of dense forests, serene lakes, and gentle streams.",
-    "isFeaturedPost": false
+    "authorName": "Chloe Bennett",
+    "title": "Home Office Setup for Deep Focus",
+    "description": "A practical home office guide covering lighting, chair fit, desk height, and simple sound control to reduce fatigue and distraction. Includes a layout checklist, cable management basics, and how to create a “start work” ritual that improves concentration. Covers ergonomic principles without expensive gear, plus small upgrades that make the biggest difference for remote work comfort over long weeks.",
+    "imageLink": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+    "categories": [
+      "Work",
+      "Home",
+      "Lifestyle"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-03T08:00:00Z"
+  },
+  {
+    "authorName": "Georgia Evans",
+    "title": "How to Read More Books With Less Effort",
+    "description": "A strategy for reading more that focuses on environment and habit design instead of willpower. Includes choosing the right formats (print, e‑ink, audio), setting up reading triggers, and reducing friction by keeping books accessible. Covers how to abandon books guilt-free, build a reading queue that fits your mood, and turn small daily windows into consistent progress.",
+    "imageLink": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f",
+    "categories": [
+      "Books",
+      "Lifestyle",
+      "Education"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-03T02:00:00Z"
+  },
+  {
+    "authorName": "Diego Morales",
+    "title": "Kayaking the Chilean Fjords",
+    "description": "Guided sea kayaking expedition through Patagonia’s remote fjords paddling with humpback whales, dolphins, and sea lions. Technical skills required, double kayak recommendations, dry bag packing lists, Puerto Natales departure logistics, 6-day itinerary covering Madre de Dios and Kirke fjords, and re-supply strategies for multi-day trips.",
+    "imageLink": "https://images.unsplash.com/photo-1518709268805-4e9042af2176",
+    "categories": [
+      "Adventure",
+      "South America",
+      "Wildlife"
+    ],
+    "featuredPost": true
+  },
+  {
+    "authorName": "Sebastian Müller",
+    "title": "Learning German Faster: A Daily Micro-Plan",
+    "description": "A language-learning routine built around consistency: short listening, active recall, and speaking practice without perfectionism. Includes a 20-minute daily template, ways to choose content that fits your level, and how to track progress with simple milestones. Covers pronunciation practice, sentence mining, and realistic expectations so motivation stays stable for months instead of fading after one intense week.",
+    "imageLink": "https://images.unsplash.com/photo-1526481280691-3e4e9c1d4a5d",
+    "categories": [
+      "Education",
+      "Lifestyle"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-03T04:30:00Z"
+  },
+  {
+    "authorName": "Hugo Laurent",
+    "title": "Learning to Cook Thai Curries at Home",
+    "description": "A step-by-step guide to Thai curries that focuses on technique: building aroma, balancing sweet-sour-salty, and controlling heat. Covers green, red, and massaman curry with ingredient substitutions and a small spice primer. Includes tips for making curry paste smoother, cooking proteins without toughness, and finishing with the right herbs. Designed for home kitchens using one pan and simple tools.",
+    "imageLink": "https://images.unsplash.com/photo-1526318896980-cf78c088247c",
+    "categories": [
+      "Food",
+      "Asia",
+      "DIY"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-03T08:30:00Z"
+  },
+  {
+    "authorName": "Ben Carter",
+    "title": "Learning to Cook Without Recipes Every Time",
+    "description": "A skill-based cooking guide that teaches patterns: how to build flavor with aromatics, control heat, and balance salt, acid, and sweetness. Includes foundational methods (sauté, roast, simmer) and how to improvise sauces from pantry staples. Helps beginners move from strict recipes to confident cooking by understanding what each ingredient does and how to adjust when something tastes off.",
+    "imageLink": "https://images.unsplash.com/photo-1514516873430-9f8c7f9c2f6b",
+    "categories": [
+      "Food",
+      "Education",
+      "Lifestyle"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-03T00:00:00Z"
+  },
+  {
+    "authorName": "Helena Duarte",
+    "title": "Lisbon on a Budget: Great Views, Low Spend",
+    "description": "A budget Lisbon itinerary that prioritizes scenic miradouros, local bakeries, and walkable neighborhoods without expensive tours. Includes a daily spend target, transit hacks, and simple meal strategies that still let you try iconic foods. Covers when to visit viewpoints for softer light and fewer people, plus a shortlist of affordable day trips that don’t require rental cars.",
+    "imageLink": "https://images.unsplash.com/photo-1526481280691-3e4e9c1d4a6d",
+    "categories": [
+      "Travel",
+      "Europe",
+      "Finance"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-03T07:00:00Z"
+  },
+  {
+    "authorName": "Hannah Brooks",
+    "title": "Meal Prep That Doesn’t Taste Reheated",
+    "description": "A practical meal-prep framework with recipes chosen for texture: roasted vegetables that stay crisp, proteins that don’t dry out, and sauces stored separately for freshness. Covers a 90‑minute weekly workflow, shopping lists, container choices, and safe cooling rules. Includes flavor rotation ideas (Mediterranean, Thai-inspired, Indian) so the same ingredients don’t feel repetitive across the week.",
+    "imageLink": "https://images.unsplash.com/photo-1543353071-087092ec393a",
+    "categories": [
+      "Food",
+      "Lifestyle",
+      "Health"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-02T18:30:00Z"
+  },
+  {
+    "authorName": "Zara El-Amin",
+    "title": "Meditation for Busy Minds: A 10-Minute Routine",
+    "description": "A short daily meditation routine aimed at people who struggle with focus and restlessness. Includes breathing cues, posture options, and a simple structure: settling, noticing, labeling thoughts, and returning to breath. Covers how to handle boredom and self-judgment, plus tips to build consistency without forcing long sessions. Also includes a quick pre-sleep version for reducing mental noise at night.",
+    "imageLink": "https://images.unsplash.com/photo-1506126613408-eca07ce68773",
+    "categories": [
+      "Wellness",
+      "Mindfulness",
+      "Lifestyle"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-02T19:30:00Z"
+  },
+  {
+    "authorName": "Kiran Iyer",
+    "title": "Monsoon Road Trip: Kerala’s Backwater Towns",
+    "description": "A rain-season Kerala itinerary focused on short drives, calm houseboat time, and local food stops that shine during monsoon. Includes route planning to avoid flood-prone roads, best times for backwater cruises, what to pack for humidity, and how to choose homestays with reliable power backup. Also suggests small-town markets and low-key viewpoints when beaches are too rough.",
+    "imageLink": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
+    "categories": [
+      "Travel",
+      "India",
+      "Nature"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-02T18:00:00Z"
+  },
+  {
+    "authorName": "Aisha Khan",
+    "title": "Moroccan Riads: Hidden Gems of Marrakech",
+    "description": "Curated list of 15 authentic riads in Marrakech medina featuring courtyard fountains, zellij tilework, hammam suites, rooftop terraces with Atlas mountain views, and traditional Moroccan breakfasts. Booking strategies for Ramadan, haggling guides for souk proximity, private riad tour itineraries, restoration histories, family-run vs boutique distinctions, and transportation from Marrakech Airport (RAK).",
+    "imageLink": "https://images.unsplash.com/photo-1588880331176-79ba8f3b56ef",
+    "categories": [
+      "Travel",
+      "Africa",
+      "Culture"
+    ],
+    "featuredPost": true
+  },
+  {
+    "authorName": "Aarav Singh",
+    "title": "Motorbike Adventure Across Vietnam",
+    "description": "Easy Riders tour on modified Minsk motorbikes from Ho Chi Minh City to Hanoi through Central Highlands. Daily riding schedules, border crossings to Cambodia and Laos, homestay accommodations, ethnic minority village visits, best repair shops, spare parts list, and rainy season riding strategies for Ha Giang Loop extension.",
+    "imageLink": "https://images.unsplash.com/photo-1558618047-3c8c76bbb17e",
+    "categories": [
+      "Adventure",
+      "Asia",
+      "Motorcycle"
+    ],
+    "featuredPost": true
+  },
+  {
+    "authorName": "Oliver Grant",
+    "title": "Mountain Biking in Utah",
+    "description": "50+ intermediate trails across Moab (Slickrock, Porcupine Rim), St. George (Zen Trail, Bearclaw Poppy), and Park City (Mid Mountain) with GPS coordinates, elevation profiles, technical difficulty ratings, water drop counts, shuttle services, bike rental comparisons, post-ride recovery protocols, and seasonal condition reports for optimal riding windows September-May.",
+    "imageLink": "https://images.unsplash.com/photo-1560272562-cabef81cccba",
+    "categories": [
+      "Adventure",
+      "North America"
+    ],
+    "featuredPost": true
+  },
+  {
+    "authorName": "Lars Jensen",
+    "title": "Northern Lights Photography Guide",
+    "description": "Technical guide for aurora borealis photography featuring Nikon D850 settings (ISO 3200, f/2.8, 20s exposures), foreground compositions, star trail stacking techniques, Kirkjufell location access, Abisko Bridge timing, Tromsø cable car vantage points, Kp index forecasting apps, cold weather battery strategies, and 25-image Lightroom preset workflow for natural aurora color rendering.",
+    "imageLink": "https://images.unsplash.com/photo-1518709268805-4e9042af2176",
+    "categories": [
+      "Photography",
+      "Nature"
+    ],
+    "featuredPost": true
+  },
+  {
+    "authorName": "Yara Haddad",
+    "title": "Petra in One Day: A Smart Walking Route",
+    "description": "A time-efficient Petra route that prioritizes views, pacing, and energy management. Covers early entry timing, where to take breaks, and how to choose between the Monastery and High Place of Sacrifice depending on your fitness level. Includes what to carry (water, snacks, sun protection), footwear advice, and simple tips to avoid the largest crowds without rushing the experience.",
+    "imageLink": "https://images.unsplash.com/photo-1549880338-65ddcdfd017b",
+    "categories": [
+      "Travel",
+      "Middle East",
+      "History"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-02T23:30:00Z"
+  },
+  {
+    "authorName": "Priya Mehta",
+    "title": "Remote Work: How I Built a Career While Traveling",
+    "description": "A practical breakdown of building a remote career while moving between countries: choosing roles that support asynchronous work, setting boundaries across time zones, and building trust through predictable communication. Covers creating a portable workflow, managing taxes and paperwork at a basic level, and keeping health routines stable. Includes lessons learned from mistakes—overplanning, under-resting, and ignoring connectivity realities.",
+    "imageLink": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd439",
+    "categories": [
+      "Work",
+      "Lifestyle"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-03T05:00:00Z"
+  },
+  {
+    "authorName": "Finn O'Connor",
+    "title": "Rock Climbing Red River Gorge",
+    "description": "Ultimate guide to Kentucky's premier sport climbing destination with 3,000+ routes across 11 sectors. Best seasons, approach trail descriptions, recommended guidebooks, gear lists for overhanging limestone, classic 5.10-5.13 sends, and camping at Miguel's Pizza. Detailed topos for Motherlode, Chocolate Factory, and Solar Collector walls.",
+    "imageLink": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+    "categories": [
+      "Adventure",
+      "North America"
+    ],
+    "featuredPost": true
+  },
+  {
+    "authorName": "Valentina Rossi",
+    "title": "Rome at Sunrise: Quiet Streets and Soft Light",
+    "description": "A sunrise walking plan for Rome that prioritizes calm streets, gentle light, and fewer crowds. Includes a route linking major viewpoints and lesser-known alleys, with timing suggestions for each stop. Covers where to pause for espresso without losing momentum, how to avoid tourist bottlenecks later in the day, and photography tips for warm tones on stone without over-editing.",
+    "imageLink": "https://images.unsplash.com/photo-1526481280691-3e4e9c1d4a3d",
+    "categories": [
+      "Travel",
+      "Europe",
+      "City"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-03T03:00:00Z"
+  },
+  {
+    "authorName": "Samuel Adeyemi",
+    "title": "Running Your First 10K: Training Without Burnout",
+    "description": "A beginner 10K plan focused on gradual progress and injury prevention. Covers run-walk intervals, weekly structure, and how to listen to fatigue signals. Includes warmup drills, simple strength work for hips and calves, and practical recovery habits like sleep and hydration. Also explains how to pick shoes, manage pace, and handle race-day nerves so the event feels like a celebration, not a punishment.",
+    "imageLink": "https://images.unsplash.com/photo-1517832207067-4db24a2ae47c",
+    "categories": [
+      "Fitness",
+      "Sports",
+      "Health"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-03T07:30:00Z"
+  },
+  {
+    "authorName": "Elena Vargas",
+    "title": "Sailing the Greek Islands",
+    "description": "Complete 7-day bareboat sailing itinerary from Paros to Santorini via Naxos, Ios, and Folegandros with daily distances, mooring fees, water taxi schedules, and wind pattern forecasts. Essential yacht charter checklist, VHF radio protocols, anchoring techniques for 10-25 knot Meltemi winds, beach bar recommendations, sunset dinner spots, and marine conservation guidelines for Cyclades protected bays.",
+    "imageLink": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4",
+    "categories": [
+      "Travel",
+      "Europe",
+      "Adventure"
+    ],
+    "featuredPost": true
+  },
+  {
+    "authorName": "Mikko Saarinen",
+    "title": "Sauna Culture in Finland: What to Expect",
+    "description": "A respectful guide to Finnish sauna traditions: how sessions work, what to bring, and common etiquette in public and private saunas. Covers temperature expectations, cooling breaks, hydration, and how to handle shyness without stress. Includes notes on smoke saunas, lakeside saunas, and the role of silence and conversation. Practical, cultural, and aimed at first-time visitors who want to do it right.",
+    "imageLink": "https://images.unsplash.com/photo-1526481280691-3e4e9c1d4a7d",
+    "categories": [
+      "Culture",
+      "Europe",
+      "Wellness"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-03T09:30:00Z"
+  },
+  {
+    "authorName": "Mateo Silva",
+    "title": "Scuba Diving the Great Barrier Reef",
+    "description": "10-day liveaboard diving expedition exploring Ribbon Reefs, Cod Hole, and Steve's Bommie. Detailed gear checklist, best dive operators, marine life highlights including Maori wrasse, turtles, and reef sharks. Packing guide for Cairns departure, certification requirements, and tips for underwater photography in Australia's world-famous coral ecosystem.",
+    "imageLink": "https://images.unsplash.com/photo-1570595262467-824cfe3d1c9f",
+    "categories": [
+      "Adventure",
+      "Nature",
+      "Australia"
+    ],
+    "featuredPost": true
+  },
+  {
+    "authorName": "Maya Chen",
+    "title": "Slow Travel Through Vietnam",
+    "description": "30-day immersive itinerary living like locals in Hoi An tailoring workshops, Hanoi cyclo tours, Mekong Delta homestays, Sapa rice terrace treks, and Phu Quoc beach bungalows. Detailed budget breakdown ($25-35/day), motorbike rental safety protocols, SIM card strategies, homestay cooking classes, night market navigation, visa extension processes, and authentic coffee shop guides avoiding tourist traps.",
+    "imageLink": "https://images.unsplash.com/photo-1571847200490-b56391b56249",
+    "categories": [
+      "Travel",
+      "Asia"
+    ],
+    "featuredPost": false
+  },
+  {
+    "authorName": "Jamal Carter",
+    "title": "Street Art Tour of Bogotá",
+    "description": "Self-guided walking tour through Colombia's most colorful neighborhoods including La Candelaria, San Felipe, and Barrio Las Aguas. 50+ murals mapped with GPS coordinates, artist biographies, best photography angles, street food pairings, safety tips, and guided tour alternatives. History of Bogotá's urban art movement from 2011 onwards.",
+    "imageLink": "https://images.unsplash.com/photo-1544620347-0b7a97e9eb17",
+    "categories": [
+      "Culture",
+      "Art",
+      "South America"
+    ],
+    "featuredPost": true
+  },
+  {
+    "authorName": "Carlos Rivera",
+    "title": "Street Food Diaries: Bangkok After Midnight",
+    "description": "Complete night market guide featuring Chinatown's Yaowarat Road (som tam, kuay teow, grilled squid), Ratchada's Jodd Fairs (moo ping skewers, khao man gai), and Asiatique's Michelin Bib Gourmand stalls. 25 vendor recommendations with price ranges (30-80 THB), spice level warnings, vegetarian adaptations, tuk-tuk routes from BTS stations, and pairing suggestions with Chang beer or Thai iced tea.",
+    "imageLink": "https://images.unsplash.com/photo-1532634896-26909d0d4b28",
+    "categories": [
+      "Food",
+      "Asia",
+      "Culture"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-02T08:30:00Z"
+  },
+  {
+    "authorName": "Raj Patel",
+    "title": "Street Photography in Tokyo",
+    "description": "48-hour photography itinerary capturing Shibuya crossing at golden hour, neon-lit Dotonbori alleys, Tsukiji fish market at 5AM, and Harajuku cosplay crowds. Camera settings for low-light (ISO 1600, f/2.8, 1/125s), prime lens recommendations (35mm f/1.4), candid shooting techniques, Tokyo Metro photography rules, ethical street photography guidelines, and 20 post-processing tips using Lightroom mobile.",
+    "imageLink": "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9",
+    "categories": [
+      "Photography",
+      "Asia",
+      "City"
+    ],
+    "featuredPost": false
+  },
+  {
+    "authorName": "Isabella Costa",
+    "title": "Surfing Lessons in Bali",
+    "description": "Beginner-to-intermediate progression across Canggu (Batu Bolong), Kuta (Kuta Beach), and Uluwatu (Dreamland) with 12 surf schools ranked by student:instructor ratios, board quiver recommendations (8'0 funboards), 6-lesson skill progression, rip current escape techniques, beginner-friendly tide charts, board bag rental prices, and post-surf warung recovery meal guides.",
+    "imageLink": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+    "categories": [
+      "Adventure",
+      "Asia"
+    ],
+    "featuredPost": true
+  },
+  {
+    "authorName": "Amara Okeke",
+    "title": "Sustainable Fashion in Bali",
+    "description": "Ethical clothing brands and artisan cooperatives around Ubud creating handmade batik, ikat weaving, and natural dye textiles. Fair trade workshops, factory tours, living wage certifications, plastic-free packaging initiatives, custom tailoring services, shipping guides, and how to spot authentic Balinese textiles versus mass-produced souvenirs.",
+    "imageLink": "https://images.unsplash.com/photo-1529139578434-2b6b3d0a5b2a",
+    "categories": [
+      "Shopping",
+      "Asia",
+      "Sustainable"
+    ],
+    "featuredPost": false
+  },
+  {
+    "authorName": "Aya Nakamura",
+    "title": "Tokyo Tea Houses: Calm Corners in a Loud City",
+    "description": "A guide to finding quiet tea spaces in Tokyo, with notes on atmosphere, ordering, and how long it’s acceptable to stay. Covers what to try (matcha, hojicha, wagashi), how to recognize traditional vs modern cafés, and etiquette that keeps the space peaceful. Includes a suggested route that pairs tea stops with short walks in gardens and small backstreets.",
+    "imageLink": "https://images.unsplash.com/photo-1526481280691-3e4e9c1d4a4d",
+    "categories": [
+      "Food",
+      "Asia",
+      "City"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-03T04:00:00Z"
+  },
+  {
+    "authorName": "Fatima Al-Sayed",
+    "title": "Traditional Emirati Cooking",
+    "description": "Authentic Emirati recipes featuring machboos (spiced lamb rice), luqaimat (date syrup dumplings), harees (wheat porridge), balaleet (sweet vermicelli omelette), and khabeesa (semolina cake). Complete ingredient sourcing from Deira spice souks, spice blend ratios, pressure cooker adaptations, Ramadan iftar presentation styles, modern plating techniques, and pairing suggestions with Emirati karak chai.",
+    "imageLink": "https://images.unsplash.com/photo-1621996346565-e3bbc09f1fe9",
+    "categories": [
+      "Food",
+      "Middle East"
+    ],
+    "featuredPost": false
+  },
+  {
+    "authorName": "Theo Martins",
+    "title": "Understanding Cloud Costs Before They Surprise You",
+    "description": "A plain-language breakdown of why cloud bills grow: egress, idle resources, over-provisioning, and hidden managed-service costs. Includes a simple tagging strategy, budget alerts, and a weekly audit checklist. Explains tradeoffs between reserved capacity and on-demand usage, and how to design systems that scale responsibly. Good for teams migrating to cloud who need cost visibility from day one.",
+    "imageLink": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "categories": [
+      "Tech",
+      "Cloud",
+      "Finance"
+    ],
+    "featuredPost": true,
+    "timeOfPost": "2026-01-03T01:00:00Z"
+  },
+  {
+    "authorName": "Marcus Lee",
+    "title": "Urban Gardening in Small Apartments",
+    "description": "Space-optimized growing systems for 200 sq ft apartments featuring IKEA Lack shelf hydroponics, vertical PVC pipe planters, AeroGarden pods, mushroom logs under sinks, microgreens on fridge doors, and balcony potato towers. 12-month crop rotation schedule, LED lighting calculations (3000 lumens/sq meter), automated watering circuits, organic pest control recipes, and harvesting timelines for continuous yields.",
+    "imageLink": "https://images.unsplash.com/photo-1587829741303-dc126a1fbc90",
+    "categories": [
+      "Lifestyle",
+      "Home"
+    ],
+    "featuredPost": false
+  },
+  {
+    "authorName": "Kieran Walsh",
+    "title": "Van Life Through Patagonia",
+    "description": "Converting a cargo van and driving 5,000km from Buenos Aires to Ushuaia through Argentina and Chile. Discover the best wild camping spots, border crossings, fuel stops, and hidden hot springs along Ruta 40. Essential maintenance tips for rough Patagonian roads and must-visit national parks like Los Glaciares and Torres del Paine.",
+    "imageLink": "https://images.unsplash.com/photo-1578662996442-48f60103fc96",
+    "categories": [
+      "Travel",
+      "Adventure",
+      "South America"
+    ],
+    "featuredPost": true
+  },
+  {
+    "authorName": "Anika Müller",
+    "title": "Vegan Cooking Classes in Chiang Mai",
+    "description": "Master Thai vegan cuisine through hands-on cooking classes with local families. Learn to make khao soi without fish sauce, mango sticky rice with coconut cream, and temple-style vegetable curries. Includes market tours to source fresh lemongrass, galangal, kaffir lime leaves, and rare Thai herbs while discovering Chiang Mai's vegetarian food scene.",
+    "imageLink": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b",
+    "categories": [
+      "Food",
+      "Asia",
+      "Culture"
+    ],
+    "featuredPost": false
+  },
+  {
+    "authorName": "Ritika Sharma",
+    "title": "Weekend Getaway: Pondicherry by Bicycle",
+    "description": "A two-day Pondicherry plan built around calm cycling, café stops, and early morning seafront rides. Covers bike rentals, route timing to avoid traffic, hydration and sun protection, and a short list of scenic streets in the French Quarter. Includes a flexible schedule that balances movement and rest, plus suggestions for quick local meals that won’t slow you down after a ride.",
+    "imageLink": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ff",
+    "categories": [
+      "Travel",
+      "India",
+      "City"
+    ],
+    "featuredPost": false,
+    "timeOfPost": "2026-01-03T01:30:00Z"
+  },
+  {
+    "authorName": "Nora Svensson",
+    "title": "Wild Swimming in Cornwall",
+    "description": "Secret beach guide to 20+ wild swimming spots along Cornwall's rugged coastline from Land's End to Tintagel. Tide charts, water temperature averages, seal watching locations, best wetsuits for 12-15°C water, coastal path walking routes, pasty shop recommendations, and dog-friendly beach access points during summer months.",
+    "imageLink": "https://images.unsplash.com/photo-1519046904884-53103b34b206",
+    "categories": [
+      "Nature",
+      "Europe",
+      "Wellness"
+    ],
+    "featuredPost": false
+  },
+  {
+    "authorName": "Chiara Ferrari",
+    "title": "Wine Tasting Road Trip Through Tuscany",
+    "description": "8-day self-drive itinerary visiting Chianti Classico, Brunello di Montalcino, and Bolgheri DOC regions. 25 wineries with appointment requirements, harvest season schedules, food pairings for Sangiovese and Super Tuscans, agriturismo accommodations, olive oil tastings, and truffle hunting day trips from San Miniato.",
+    "imageLink": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+    "categories": [
+      "Food",
+      "Europe",
+      "Wine"
+    ],
+    "featuredPost": false
+  },
+  {
+    "authorName": "Sophie Laurent",
+    "title": "Winter Hiking in the Dolomites",
+    "description": "Comprehensive guide to snowshoeing Italy's UNESCO-listed Dolomites featuring 7 essential routes from Tre Cime di Lavaredo to Lago di Braies. Detailed gear lists including MSR snowshoes, Black Diamond poles, insulated gaiters, avalanche beacons, and layered clothing systems for -15°C conditions. Best winter months (January-March), mountain hut reservations, cable car schedules, wildlife spotting opportunities, and emergency protocols for remote alpine terrain.",
+    "imageLink": "https://images.unsplash.com/photo-1512818182282-d9dbcc0201e4",
+    "categories": [
+      "Adventure",
+      "Europe",
+      "Mountains"
+    ],
+    "featuredPost": true
   }
 ]
