@@ -2,6 +2,7 @@
 
 import { useNavigate } from 'react-router-dom';
 import { authService } from '@/services/auth-service';
+import userState from '@/utils/user-state';
 
 export const useAuthActions = () => {
   const navigate = useNavigate();
@@ -13,9 +14,23 @@ export const useAuthActions = () => {
 
   const login = async (email: string, password: string) => {
     const { token } = await authService.login({ email, password });
+
+    // store token
     localStorage.setItem('token', token);
+
+    // minimal auth state (role resolved later)
+    userState.setUser({
+      _id: email,        // backend uses email as JWT subject
+      role: 'USER',      // safe default
+    });
+
     navigate('/');
   };
 
-  return { signup, login };
+  const logout = () => {
+    userState.removeUser();
+    navigate('/signin');
+  };
+
+  return { signup, login, logout };
 };

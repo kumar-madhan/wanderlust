@@ -37,9 +37,9 @@ class UserState {
 
   removeUser(): void {
     this.setUser(null);
-    localStorage.removeItem('userId');
-    localStorage.removeItem('role');
+    localStorage.removeItem('token'); // ← ADD THIS
   }
+
 }
 
 const userState = UserState.getInstance();
