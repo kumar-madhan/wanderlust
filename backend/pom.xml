@@ -73,7 +73,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.wanderlust.BackendApplication</mainClass>
+                    <mainClass>com.WanderlustApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
