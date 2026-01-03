@@ -4,7 +4,6 @@ import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import navigateBackWhiteIcon from '@/assets/svg/navigate-back-white.svg';
-import arrowRightWhiteIcon from '@/assets/svg/arrow-right-white.svg';
 import arrowRightBlackIcon from '@/assets/svg/arrow-right-black.svg';
 
 import formatPostTime from '@/utils/format-post-time';

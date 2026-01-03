@@ -76,7 +76,7 @@ export default function BlogFeed() {
                   <FeaturedPostCardSkeleton key={index} />
                 ))
               : posts.slice(0, 5).map((post) => (
-                  <FeaturedPostCard key={post.id} post={post} />
+                  <FeaturedPostCard key={post._id} post={post} />
                 ))}
           </div>
         </div>
@@ -124,7 +124,7 @@ export default function BlogFeed() {
                     <LatestPostCardSkeleton key={index} />
                   ))
                 : latestPosts.slice(0, 5).map((post) => (
-                    <LatestPostCard key={post.id} post={post} />
+                    <LatestPostCard key={post._id} post={post} />
                   ))}
             </div>
           </div>

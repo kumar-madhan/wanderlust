@@ -3,7 +3,6 @@
 import ThemeToggle from '@/components/theme-toggle-button';
 import AddIcon from '@/assets/svg/add-icon-white.svg';
 import LogOutIcon from '@/assets/svg/logout-icon.svg';
-import LogInIcon from '@/assets/svg/login-icon.svg';
 import AppIcon from '@/assets/svg/app-icon.svg';
 import { useNavigate, Link } from 'react-router-dom';
 import Hero from '@/components/hero';

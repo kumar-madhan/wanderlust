@@ -8,3 +8,5 @@ export type Post = {
   featuredPost: boolean;
   timeOfPost: string;
 };
+
+export default Post;
