@@ -68,7 +68,11 @@ function Signin() {
           {...register('email', { required: 'Email is required' })}
           type="email"
           placeholder="Email"
-          className="w-full rounded-lg bg-zinc-100 p-3 dark:bg-dark-field"
+          className="
+            w-full rounded-lg p-3 text-sm
+            bg-zinc-100 text-black placeholder:text-zinc-500
+            dark:bg-dark-field dark:text-white dark:placeholder:text-gray-400
+          "
         />
         {errors.email && (
           <p className="text-xs text-red-500">{errors.email.message}</p>
@@ -79,7 +83,11 @@ function Signin() {
             {...register('password', { required: 'Password is required' })}
             type={passwordVisible ? 'text' : 'password'}
             placeholder="Password"
-            className="w-full rounded-lg bg-zinc-100 p-3 dark:bg-dark-field"
+            className="
+              w-full rounded-lg p-3 text-sm
+              bg-zinc-100 text-black placeholder:text-zinc-500
+              dark:bg-dark-field dark:text-white dark:placeholder:text-gray-400
+            "
           />
           <button
             type="button"
